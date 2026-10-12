@@ -1,1 +1,151 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحتي الشخصية</title>
+    <style>
+        /* تنسيقات عامة */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f7f6;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 60px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        /* الأقسام */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        /* المهارات */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            background: #3498db;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        /* المشاريع */
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 6px;
+            text-align: right;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #3498db;
+        }
+        /* أزرار وروابط */
+        .btn {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #3498db;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الهيدر والتعريف العام -->
+    <header>
+        <h1>مرحباً بك في موقعي الشخصي 👋</h1>
+        <p>مطور ويب شغوف ببناء تطبيقات ومواقع متميزة</p>
+    </header>
+
+    <div class="container">
+        <!-- قسم من أنا -->
+        <section>
+            <h2>من أنا؟</h2>
+            <p>أنا مطور برمجيات مهتم بتقنيات الويب الحديثة. أحب تحويل الأفكار إلى كود برميجي يحل المشاكل اليومية ويسهل حياة المستخدمين.</p>
+        </section>
+
+        <!-- قسم المهارات -->
+        <section>
+            <h2>مهاراتي</h2>
+            <ul class="skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+
+        <!-- قسم المشاريع -->
+        <section>
+            <h2>مشاريعي</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>مشروع تطبيق إدارة المهام</h3>
+                    <p>تطبيق ويب بسيط يتيح للمستخدمين إضافة، تعديل، وحذف مهامهم اليومية مع حفظ البيانات محلياً.</p>
+                    <a href="#" class="btn">عرض المشروع</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026</p>
+    </footer>
+
+</body>
+</html>
